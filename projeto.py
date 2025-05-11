@@ -2,7 +2,8 @@ from datetime import datetime
 
 hoje = datetime.today()
 
-nome = input("Olá, seja muito bem-vindo(a)! Por favor, me diga o seu nome completo:\n")
+print("Olá, seja muito bem-vindo(a)! Lembre-se que para obter melhores resultados, é importante ter acompanhamento profissional!\n")
+nome = input("Por favor, me diga o seu nome completo:\n")
 nascimento = input("Agora, insira sua data de nascimento (no modelo dd/mm/aaaa):\n")
 nascimento = datetime.strptime(nascimento, "%d/%m/%Y")
 idade = hoje.year - nascimento.year
