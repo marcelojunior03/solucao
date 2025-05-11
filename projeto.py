@@ -9,4 +9,5 @@ nascimento = datetime.strptime(nascimento, "%d/%m/%Y")
 idade = hoje.year - nascimento.year
 if hoje.month < nascimento.month or (hoje.month == nascimento.month and hoje.day < nascimento.day):
     idade -= 1
-
+inicio_idade = float(input("Com quantos anos você começou a fumar?"))
+tempo_fumando = idade - inicio_idade
